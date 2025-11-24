@@ -4,9 +4,8 @@ import requests
 import os
 
 # --- CONFIGURATION (Replace these with your actual keys later) ---
-# It is better to use .env file, but for hackathon speed, put them here temporarily.
-os.environ["OPENWEATHER_API_KEY"] = "PASTE_YOUR_OPENWEATHER_KEY_HERE"
-os.environ["GEMINI_API_KEY"] = "PASTE_YOUR_GEMINI_KEY_HERE"
+os.environ["OPENWEATHER_API_KEY"] = "OPENWEATHER_KEY"
+os.environ["GEMINI_API_KEY"] = "GEMINI_KEY"
 
 # Configure Gemini
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
